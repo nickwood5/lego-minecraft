@@ -12,6 +12,12 @@ def are_blocks_adjacent(block1, block2):
 
     return False
 
+def is_block_above(block1, block2):
+    if (block1["y"] - block2["y"]) == 1 and block1["x"] == block2["x"] and block1["z"] == block2["z"]:
+        return True
+
+    return False
+
 def format_design(chunk):
     model = []
     all_elements = []
@@ -51,21 +57,28 @@ def create_block_groupings(blocks, model):
 
 
             stop = False
-            block_num = 0
+            block_num = 1
+            update = False
             while len(present_blocks[block]) > 0 and stop == False:
-                block1 = present_blocks[block][block_num]
-                block2 = present_blocks[block][block_num - 1]
-
-                if are_blocks_adjacent(block1, block2):
-                    block_groupings[block].append([block1, block2])
-                    present_blocks[block].remove(block1)
-                    present_blocks[block].remove(block2)
-
-                block_num += 1
-                
-                
-                if block_num == len(present_blocks[block]):
+                if (block_num + 1) > len(present_blocks[block]) or block_num > len(present_blocks[block]):
                     stop = True
+
+                if stop == False:
+
+                    block1 = present_blocks[block][block_num]
+                    block2 = present_blocks[block][block_num - 1]
+
+                    if are_blocks_adjacent(block1, block2):
+                        block_groupings[block].append([block1, block2])
+                        present_blocks[block].remove(block1)
+                        present_blocks[block].remove(block2)
+                        update = True
+
+                    block_num += 1
+
+                    if update == False:
+                        stop = True
+                
 
             searching = True
 
@@ -86,7 +99,7 @@ def create_block_groupings(blocks, model):
                                 update = True
                                 break
 
-                if len(present_blocks[block]) == 0:
+                if len(present_blocks[block]) == 0 or update == False:
                     searching = False
 
             searching = True
@@ -127,13 +140,28 @@ decorations = {
 blocks = {
     "grass_block": {},
     "oak_log": {},
-    "oak_planks": {}
+    "oak_planks": {},
+    "birch_planks": {},
+    "oak_slab": {},
+    "granite": {}
 }
 
 region = anvil.Region.from_file('r.0.-1.mca')
 chunk = anvil.Chunk.from_region(region, 1, 30)
 
 model, all_elements = format_design(chunk)
+print(all_elements)
 
 block_groupings = create_block_groupings(blocks, model)
-print(block_groupings)
+
+
+# Check the overhanging blocks within each individual group
+for block_type in block_groupings.keys():
+    for group in block_groupings[block_type]:
+        for block in group:
+            for compared_block in group:
+                if block != compared_block:
+                    if is_block_above(block, compared_block):
+                        compared_block["block_above"] = True
+
+print(block_groupings["granite"])
