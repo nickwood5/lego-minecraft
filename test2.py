@@ -132,6 +132,9 @@ def create_block_groupings(blocks, model):
 
     return block_groupings
 
+def get_min_y(block_grouping):
+    
+
 
 decorations = {
     "dandelion": {}
@@ -164,4 +167,29 @@ for block_type in block_groupings.keys():
                     if is_block_above(block, compared_block):
                         compared_block["block_above"] = True
 
+        for compared_block_type in block_groupings.keys():
+            for compared_group in block_groupings[compared_block_type]:
+                if compared_group != group:
+                    for block in group:
+                        for compared_block in compared_group:
+                            if is_block_above(block, compared_block):
+                                compared_block["block_above"] = True
+
+for block_type in block_groupings.keys():
+    for group in block_groupings[block_type]:
+        for block in group:
+            if "block_above" not in block.keys():
+                block["block_above"] = False
+
+
+
+    
+
+# Check for overhanging blocks within all additional groups 
+
+
+print(block_groupings.keys())
+
 print(block_groupings["granite"])
+
+print(block_groupings)
