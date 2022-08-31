@@ -1,0 +1,25 @@
+BLItemNo,ElementId,LdrawId,PartName,BLColorId,LDrawColorId,ColorName,ColorCategory,Qty,Weight
+3001,6135191,3001,Brick 2 x 4,150,84,Medium Nougat,Solid Colors,3,2.32
+3003,6058085,3003,Brick 2 x 2,150,84,Medium Nougat,Solid Colors,1,1.35
+3005,6220959,3005,Brick 1 x 1,12,47,Trans-Clear,Transparent Colors,3,0.44
+3005,6057986,3005,Brick 1 x 1,150,84,Medium Nougat,Solid Colors,25,0.44
+3005,4541376,3005,Brick 1 x 1,59,320,Dark Red,Solid Colors,20,0.44
+3020,6093494,3020,Plate 2 x 4,150,84,Medium Nougat,Solid Colors,1,1.2
+3020,4114309,3020,Plate 2 x 4,2,19,Tan,Solid Colors,1,1.2
+3021,4118790,3021,Plate 2 x 3,2,19,Tan,Solid Colors,4,0.93
+3021,4645060,3021,Plate 2 x 3,150,84,Medium Nougat,Solid Colors,2,0
+3022,6056383,3022,Plate 2 x 2,150,84,Medium Nougat,Solid Colors,3,0.64
+3023,4113917,3023,Plate 1 x 2,2,19,Tan,Solid Colors,5,0.36
+3023,6218360,3023,Plate 1 x 2,150,84,Medium Nougat,Solid Colors,6,0.36
+3024,6252041,3024,Plate 1 x 1,12,47,Trans-Clear,Transparent Colors,3,0.2
+3024,6073040,3024,Plate 1 x 1,110,191,Bright Light Orange,Solid Colors,2,0.2
+3024,6215606,3024,Plate 1 x 1,150,84,Medium Nougat,Solid Colors,14,0.2
+3024,4159553,3024,Plate 1 x 1,2,19,Tan,Solid Colors,1,0.2
+3031,4243824,3031,Plate 4 x 4,2,19,Tan,Solid Colors,2,2.22
+3070b,6177146,3070b,Tile 1 x 1 with Groove,150,84,Medium Nougat,Solid Colors,33,0.16
+3070b,4125253,3070b,Tile 1 x 1 with Groove,2,19,Tan,Solid Colors,49,0.16
+3623,4121921,3623,Plate 1 x 3,2,19,Tan,Solid Colors,3,0.53
+3710,6167700,3710,Plate 1 x 4,150,84,Medium Nougat,Solid Colors,1,0.71
+,,,,,,,,,
+Total qty,Total Weight,,,,,,,,
+182,65.28999,,,,,,,,

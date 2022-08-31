@@ -1,0 +1,272 @@
+{
+    "bricks": {
+        "1x1_plate": {
+            "height": 1, 
+            "positions": [
+                {"x": 0, "z": 0}
+            ]
+        },
+        "1x2_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0}
+            ]
+        },
+        "1x2_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1}
+            ]
+        },
+        "1x3_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0}
+            ]
+        },
+        "1x3_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2}
+            ]
+        },
+        "1x4_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0}
+            ]
+        },
+        "1x5_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3},
+                {"x": 0, "z": 4}
+            ]
+        },
+        "1x5_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0},
+                {"x": 4, "z": 0}
+                
+            ]
+        },
+        "1x4_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3}
+            ]
+        },
+        "corner_bottom_right_plate": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": -1},
+                {"x": -1, "z": 0}
+            ]
+        },
+        "2x2_plate": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1}
+            ]
+        },
+        "2x3_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1},
+                {"x": 2, "z": 1}
+            ]
+        },
+        "2x3_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 1, "z": 0},
+                {"x": 1, "z": 1},
+                {"x": 1, "z": 2}
+            ]
+        },
+        
+        "2x4_plate_vertical": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3},
+                {"x": 1, "z": 0},
+                {"x": 1, "z": 1},
+                {"x": 1, "z": 2},
+                {"x": 1, "z": 3}
+            ]
+        },
+        "2x4_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1},
+                {"x": 2, "z": 1},
+                {"x": 3, "z": 1}
+            ]
+        },
+        "2x6_plate_horizontal": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0},
+                {"x": 4, "z": 0},
+                {"x": 5, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1},
+                {"x": 2, "z": 1},
+                {"x": 3, "z": 1},
+                {"x": 4, "z": 1},
+                {"x": 5, "z": 1}
+            ]
+        },
+        "4x4_plate": {
+            "height": 1,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3},
+                {"x": 1, "z": 0},
+                {"x": 1, "z": 1},
+                {"x": 1, "z": 2},
+                {"x": 1, "z": 3},
+                {"x": 2, "z": 0},
+                {"x": 2, "z": 1},
+                {"x": 2, "z": 2},
+                {"x": 2, "z": 3},
+                {"x": 3, "z": 0},
+                {"x": 3, "z": 1},
+                {"x": 3, "z": 2},
+                {"x": 3, "z": 3}
+            ]
+        },
+        "1x1_brick": {
+            "height": 3, 
+            "positions": [
+                {"x": 0, "z": 0}
+            ]
+        },
+        "1x2_brick_horizontal": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0}
+            ]
+        },
+        "1x2_brick_vertical": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1}
+            ]
+        },
+        "1x3_brick_horizontal": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0}
+            ]
+        },
+        "1x3_brick_vertical": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2}
+            ]
+        },
+        "1x4_brick_horizontal": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0}
+            ]
+        },
+        "1x4_brick_vertical": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3}
+            ]
+        },
+        "2x2_brick": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1}
+            ]
+        },
+        "2x4_brick_vertical": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 0, "z": 2},
+                {"x": 0, "z": 3},
+                {"x": 1, "z": 0},
+                {"x": 1, "z": 1},
+                {"x": 1, "z": 2},
+                {"x": 1, "z": 3}
+            ]
+        },
+        "2x4_brick_horizontal": {
+            "height": 3,
+            "positions": [
+                {"x": 0, "z": 0},
+                {"x": 1, "z": 0},
+                {"x": 2, "z": 0},
+                {"x": 3, "z": 0},
+                {"x": 0, "z": 1},
+                {"x": 1, "z": 1},
+                {"x": 2, "z": 1},
+                {"x": 3, "z": 1}
+            ]
+        }
+    }
+}
