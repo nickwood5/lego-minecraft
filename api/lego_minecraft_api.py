@@ -1,9 +1,6 @@
 import flask, os
 from urllib import request
-from flask_cors import CORS
-from flask import Flask, jsonify, request, Blueprint
-from flask_restful import Api
-from werkzeug.utils import secure_filename
+from flask import jsonify, request, Blueprint
 from uuid import uuid4
 
 UPLOAD_FOLDER = '/home/nickwood5/lego_minecraft/uploaded_chunks'
@@ -20,6 +17,10 @@ def create_text_response(message):
 
 lego_minecraft_api = Blueprint('lego_minecraft_api', __name__)
 
+
+@lego_minecraft_api.route("/test", methods=['GET', 'POST'])
+def test():
+    return create_text_response("Lego Minecraft API online")
 
 @lego_minecraft_api.route("/lego_minecraft/upload_chunk", methods=["POST"])
 def receive_minecraft_chunk():
