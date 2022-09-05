@@ -1,4 +1,5 @@
-import json
+import json, os
+from uuid import uuid4
 
 f = open('config3.json')
 colour_codes = json.load(f)
@@ -14,6 +15,8 @@ def generic_brick(length, width, piece_code, x, y, z, colour, is_vertical):
         string = "1 {} {} {} {} 0 0 1 0 1 0 -1 0 0 {}.DAT".format(colour, z_brick, y_brick, x_brick, piece_code)
     print(string)
 
+    return string
+
 def generic_plate(length, width, piece_code, x, y, z, colour, is_vertical):
     z_brick = (length * 10) + (z * 20) 
     y_brick = -8 + (y * -8)
@@ -24,6 +27,8 @@ def generic_plate(length, width, piece_code, x, y, z, colour, is_vertical):
     else:
         string = "1 {} {} {} {} 0 0 1 0 1 0 -1 0 0 {}.DAT".format(colour, z_brick, y_brick, x_brick, piece_code)
     print(string)
+
+    return string
 
 def tile_1x1(x, y, z, colour):
     return generic_plate(1, 1, "3070b", x, y, z, colour, False)
@@ -187,10 +192,18 @@ lookup = {
 }
 
 
+local = True
+UPLOAD_FOLDER = '/home/nickwood5/lego_minecraft/generated_models'
 
-
-def build_model(brick_model):
+def build_model(brick_model, file_name):
     bricks = brick_model["brick_positions"]
+
+    if local:
+
+        f = open("generated_models/" + file_name + ".ldr", "w")
+    else:
+        file_path = os.path.join(UPLOAD_FOLDER, file_name + ".ldr")
+        f = open(file_path, "w")
     for brick in bricks:
         piece_id = brick["piece_id"]
         piece_colour = brick["colour"]
@@ -200,4 +213,9 @@ def build_model(brick_model):
         z = brick["z"]
         
         builder_function = lookup[piece_id]
-        builder_function(x=x, y=y, z=z, colour=colour_id)
+        line = builder_function(x=x, y=y, z=z, colour=colour_id)    
+        f.write(line)
+        f.write("\n")
+
+    f.close()
+
